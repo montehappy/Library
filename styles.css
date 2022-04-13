@@ -12,6 +12,17 @@ nav {
     display: flex;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    padding: 20px;
+}
+
+p {
+    line-height: 1.5;
+}
+
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -20,6 +31,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+
+.blue {
+    color: #0d47a1;
 }
 
 .logo {
@@ -53,5 +68,135 @@ li {
 }
 
 .nav__link--primary:hover {
-    text-decoration: none !important /*!important es para darle prioridad a este codigo; tiene que estar después del .nav__link:hover para que funcione sin el !important aunque no es necesario en este caso usar el !important*/;
+    text-decoration: none /*!important /*!important es para darle prioridad a este codigo; tiene que estar después del .nav__link:hover para que funcione sin el !important aunque no es necesario en este caso usar el !important*/;
+}
+
+#landing {
+    background-color: rgba(107, 176, 197, 0.192);
+}
+
+header {
+    height: calc(100vh - 80px);
+}
+
+.header__container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 56px;
+    color: #0d47a1;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.btn {
+    background-color: #0d47a1;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.header__img--wrapper {
+    padding: 20px;
+    z-index: 2;
+}
+
+.container {
+    padding: 56px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 
+
+HIGHLIGHT 
+
+*/
+
+#highlight {
+    position: relative;
+}
+
+#highlights:before {
+    background: url('/FES Library - CSS/assets/wave.svg');
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    top: 1px;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-100%);
+}
+
+.highlight__wrapper {
+    display: flex;
+}
+
+.highlight {
+    padding: 0 24px;
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.highlight__para {
+    text-align: center;
+    max-width: 280px;
+}
+
+.highlight__img {
+    border: 2px solid #0d48a17c;
+    color: #0d47a1;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.highlight__subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
 }
